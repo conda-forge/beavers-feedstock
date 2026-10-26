@@ -1,5 +1,5 @@
 {% set name = "beavers" %}
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/beavers-{{ version }}.tar.gz
-  sha256: cb1dfa6cbfb110e2c00a9f9682b03299e1a1737c7c4ef102b345c5791dd04c82
+  sha256: d84abc57cad0311ddc2bc6a43550572c787015454bc10cc0a99f0e871791fa52
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ test:
   commands:
     - pip check
   requires:
-    - python {{ python_min }} 
+    - python {{ python_min }}
     - pip
 
 about:
